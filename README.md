@@ -1,36 +1,36 @@
-## IndustryVault Recommended Packages
+# IndustryVault's Recommended Packages
 
 This is an R package that just attaches the IndustryVault-recommended packages (`industryvault-packages`) for use on our platform.  It includes most of Hadley Wickham's packages (colloquially known as the "Hadleyverse").  It's based on a similar package by Tony Boyles.
 
     install_github( c("arilamstein/choroplethrZip", "dgrtwo/snippr", "eddelbuettel/rpushbullet", "edwindj/chunked", "hadley/bigvis", "hadley/svglite", "haozhu233/ezsummary", "hrbrmstr/ggcounty", "jjallaire/revealjs", "karthik/rdrop2", "kevinushey/rex", "nutterb/pixiedust", "ramnathv/slidify", "ramnathv/slidifyLibraries", "ropensci/testdat", "rstudio/bookdown", "trinker/wakefield", "walkerke/tigris") )
 
 
-### Installation
+## Installation
 
     # install.packages("devtools")
     library("devtools")
     install_github("IndustryVault/industryvault-packages")
 
 
-### Use
+## Use
 
     library("industryvault-packages") 
     # All of the IndustryVault-recommended packages are now available in your environment.
     # There's no need to call library("dplyr"), etc.
 
 
-### What Happens
+## What Happens
 
 When you install an R Package, R checks the DESCRIPTION file for dependencies. If you have unmet dependencies, R tries to install them from CRAN.  Then, whenever you load the package, R makes those dependencies available.  This package just "depends on" all of the packages that the IndustryVault team recommends, despite the fact that it doesn't do anything.  
 
 
-### Recommended Packages
+## Recommended Packages
 
 The three most important R packages used on the IndustryVault platform are `dplyr`, `ggplot2`, and `rmarkdown`.  For R users new to our platform, these are the first packages with which you should become familiar.
 
 That said, here is the complete list of packages in the `industryvault-packages` package installs and loads.  Note that packages associated with the "Hadleyverse" are denoted with (H), and packages hosted on GitHub.com (not CRAN) are denoted with (G).  The packages installed include:
 
-1) Ingest
+### Ingest
   - readr:  read flat files (csv, tsv, fwf) into R (H)
   - readxl:  read excel files (.xls and .xlsx) into R (H)
   - haven:  read SPSS, Stata and SAS files from R (H)
@@ -38,7 +38,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - httr:  download web data ala the `curl` command, customised to modern web APIs (H)
   - wakefield:  generate random data sets (G)
 
-2) Manipulation
+### Manipulation
   - dplyr:  data manipulation ala plyr, specialised for data frames  (H)
   - testdat:  a package to run unit tests on tabular data
   - assertr:  a suite of functions designed to verify assumptions about data (G)
@@ -51,7 +51,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - chunked:  chunkwise text-file processing for 'dplyr' (G)
   - ezsummary:  pre-programming the common dataset summary task (G)
 
-3) Visualization
+### Visualization
   - ggplot2:  powerful plotting library in R based on the Grammar of Graphics (H)
   - ggsubplot: embed subplots in ggplot2 graphics in R (H)
   - dotwhisker:  generate dot-and-whisker plots of regression results
@@ -71,7 +71,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - leaflet:  JavaScript library for mobile-friendly interactive maps based on htmlwidgets (G)
   - rafalib:  interesting collection of functions for data exploration
 
-4) Reporting
+### Reporting
   - rmarkdown:  dynamic documents for R (H)
   - knitr:  a general-purpose tool for dynamic report generation in R  (H)
   - knitcitations:  generate citations for knitr markdown and html files
@@ -84,7 +84,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - revealjs:  RMarkdown custom format for reveal.js HTML presentations
   - bookdown:  package and set of conventions for making books with Rmarkdown and RStudio
 
-5) Programming
+### Programming
   - devtools:  tools to make an R developer's life easier (H)
   - magrittr:  R package to bring forward-piping features ala F#’s |> operator.
   - testthat:  an R package to make testing fun (H)
@@ -100,7 +100,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - slackr:  send messages to Slack channels/users from R
   - rpushbullet:  send messages to your computer, phone, or tablet using Pushbullet service
 
-### TODO
+## TODO
   - add vignette for use of three most important packages `dplyr`, `ggplot2`, and `rmarkdown`
   - add vignette for examples of all packages
   - consider adding separate packages for datasets; see, for example:
