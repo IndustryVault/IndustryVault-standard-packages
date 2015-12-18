@@ -2,8 +2,6 @@
 
 This is an R package that just attaches the IndustryVault-recommended packages (`industryvault-packages`) for use on our platform.  It includes most of Hadley Wickham's packages (colloquially known as the "Hadleyverse").  It's based on a similar package by Tony Boyles.
 
-    install_github( c("arilamstein/choroplethrZip", "dgrtwo/snippr", "eddelbuettel/rpushbullet", "edwindj/chunked", "hadley/bigvis", "hadley/svglite", "haozhu233/ezsummary", "hrbrmstr/ggcounty", "jjallaire/revealjs", "karthik/rdrop2", "kevinushey/rex", "nutterb/pixiedust", "ramnathv/slidify", "ramnathv/slidifyLibraries", "ropensci/testdat", "rstudio/bookdown", "trinker/wakefield", "walkerke/tigris") )
-
 
 ## Installation
 
@@ -101,6 +99,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - rpushbullet:  send messages to your computer, phone, or tablet using Pushbullet service
 
 ## TODO
+  - decide on implementing this package using drat, packrat, or some other method.
   - add vignette for use of three most important packages `dplyr`, `ggplot2`, and `rmarkdown`
   - add vignette for examples of all packages
   - consider adding separate packages for datasets; see, for example:
@@ -111,3 +110,8 @@ That said, here is the complete list of packages in the `industryvault-packages`
     - find out if it's safe to add `rdrop2`:  Dropbox Interface from R
     - should we allow user-installed packages on AWS?
     - can we prevent data export on AWS from R and RStudio?
+  - GitHub repo installation code is below:
+
+
+    install_github( c("arilamstein/choroplethrZip", "dgrtwo/snippr", "eddelbuettel/rpushbullet", "edwindj/chunked", "hadley/bigvis", "hadley/svglite", "haozhu233/ezsummary", "hrbrmstr/ggcounty", "jjallaire/revealjs", "karthik/rdrop2", "kevinushey/rex", "nutterb/pixiedust", "ramnathv/slidify", "ramnathv/slidifyLibraries", "ropensci/testdat", "rstudio/bookdown", "trinker/wakefield", "walkerke/tigris") )
+
