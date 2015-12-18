@@ -99,7 +99,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - rpushbullet:  send messages to your computer, phone, or tablet using Pushbullet service
 
 ## TODO
-  - decide on implementing this package using drat, packrat, or some other method.
+  - decide on implementing this package using drat, packrat, or some other method. (Not checkpoint due to GitHub repos)
   - add vignette for use of three most important packages `dplyr`, `ggplot2`, and `rmarkdown`
   - add vignette for examples of all packages
   - consider adding separate packages for datasets; see, for example:
