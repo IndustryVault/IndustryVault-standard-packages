@@ -1,24 +1,68 @@
-Package: hadleyverse
+Package: industryvault-packages
 Type: Package
-Title: Attaches a bunch of Hadley Wickham's CRAN Packages
+Title: Attaches the standard CRAN packages for the IndustryVault platform
 Version: 0.1
-Date: 2015-04-22
-Authors@R: person("Tony", "Boyles", email = "Anthony@Boyles.cc", role = c("aut", "cre"))
-Maintainer: Tony Boyles <Anthony@Boyles.cc>
-Description: This package does absolutely nothing on its own. Loading it merely attaches Hadley Wickham's most popular packages.
+Date: 2016-01-06
+Authors@R: person("Kyle", "Lundstedt", email = "kyle@industryvault.com", role = c("aut", "cre"))
+Maintainer: Kyle Lundstedt <kyle@industryvault.com>
+Description: This package does absolutely nothing on its own. Loading it merely attaches the standard CRAN packages for the IndustryVault platform.
 Depends:
-    plyr,
-    ggplot2,
-    dplyr,
-    tidyr,
-    readr,
-    haven,
-    lubridate,
-    stringr,
-    readxl,
+    assertr,
+    beepr,
+    broom,
+    captioner,
+    choroplethr,
+    chunked,
+    datacheckr,
     devtools,
-    xml2,
+    DiagrammeR,
+    directlabels,
+    doParallel,
+    dotwhisker,
+    dplyr,
+    ezsummary,
+    foreach,
+    ggalt,
+    ggplot2,
+    ggthemes,
+    ggvis,
+    haven,
+    Hmisc,
+    htmlwidgets,
+    httr,
+    knitcitations,
+    knitr,
+    leaflet,
+    lintr,
+    lubridate,
+    magrittr,
+    metricsgraphics,
+    noncensus,
+    pbapply,
+    pixiedust,
+    purrr,
+    rafalib,
+    readr,
+    readxl,
+    rdrop2,
+    rmarkdown,
+    rms,
+    RPostgreSQL,
+    rpushbullet,
+    rUnemploymentData,
+    rvest,
+    scales,
+    slackr,
+    sparkTable,
+    stargazer,
+    statebins,
+    stringr,
+    svglite,
     testthat,
-    assertthat
+    tidyr,
+    tigris,
+    tufterhandout,
+    wakefield,
+    xtable
 License: CC0 
 LazyData: TRUE
