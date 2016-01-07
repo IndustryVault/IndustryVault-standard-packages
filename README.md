@@ -5,7 +5,7 @@ This is an R package that just attaches the IndustryVault-recommended packages (
 
 ## Installation
 
-    # install.packages("devtools")
+    install.packages("devtools")
     library("devtools")
     install_github("IndustryVault/industryvault-packages")
 
