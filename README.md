@@ -34,23 +34,24 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - haven:  read SPSS, Stata and SAS files from R (H)
   - rvest:  simple web scraping for R (H)
   - httr:  download web data ala the `curl` command, customised to modern web APIs (H)
-  - wakefield:  generate random data sets (G)
+  - wakefield:  generate random data sets
 
 ### Manipulation
   - dplyr:  data manipulation ala plyr, specialised for data frames  (H)
-  - testdat:  a package to run unit tests on tabular data
-  - assertr:  a suite of functions designed to verify assumptions about data (G)
+  - multidplyr:  a backend for dplyr that partitions a data frame across multiple cores (G, H)
+  - testdat:  a package to run unit tests on tabular data (G)
+  - assertr:  a suite of functions designed to verify assumptions about data
   - tidyr:  easily tidy data with spread and gather functions (H)
   - lubridate:  make working with dates in R just that little bit easier (H)
   - stringr:  wrapper for R string functions to make them more consistent, simpler and easier to use (H)
   - broom:  convert statistical analysis objects from R into tidy format
-  - RPostgreSQL:  R interface to the PostgreSQL database system (inc. AWS Redshift)
-  - multidplyr:  partitioned data frames for 'dplyr' (G, H)
-  - chunked:  chunkwise text-file processing for 'dplyr' (G)
-  - ezsummary:  pre-programming the common dataset summary task (G)
+  - RPostgreSQL:  R interface to the PostgreSQL database, inc. AWS Redshift (rstats-db/RPostgres in development)
+  - chunked:  chunkwise text-file processing for 'dplyr'
+  - ezsummary:  pre-programming the common dataset summary task 
 
 ### Visualization
   - ggplot2:  powerful plotting library in R based on the Grammar of Graphics (H)
+  - ggalt:  extra coordinate systems, geoms, and statistical transformations for ggplot2 (H)
   - ggsubplot: embed subplots in ggplot2 graphics in R (H)
   - dotwhisker:  generate dot-and-whisker plots of regression results
   - ggmap:  plotting maps in R with ggplot2 (H)
@@ -62,8 +63,9 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - ggthemes:  ggplot themes and scales
   - scales:  more graphical scales, for use on chart axes, etc (H)
   - directlabels:  direct labels for multicolor plots in lattice or ggplot2
+  - ggrepel:  repel overlapping text labels away from each other (G)
   - ggvis:  web-based data visualizaton ala ggplot2
-  - svglite:  lightweight svg graphics (web optimal) for R (G, H)
+  - svglite:  lightweight svg graphics (web optimal) for R (H)
   - bigvis:  exploratory data analysis for large datasets (10-100 million observations) (G, H)
   - metricsgraphics:  htmlwidget interface to the MetricsGraphics.js D3 chart library
   - leaflet:  JavaScript library for mobile-friendly interactive maps based on htmlwidgets (G)
@@ -74,23 +76,23 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - knitr:  a general-purpose tool for dynamic report generation in R  (H)
   - knitcitations:  generate citations for knitr markdown and html files
   - captioner:  generate figure/table numbers and captions for RMarkdown docs
-  - DiagrammeR:  create graph diagrams and flowcharts using R (G)
-  - pixiedust: broom-compatiable table formatting (G) 
+  - DiagrammeR:  create graph diagrams and flowcharts using R
+  - pixiedust: broom-compatiable table formatting
   - stargazer:  well-formatted regression and summary statistics tables
   - xtable:  export Tables to LaTeX or HTML (alternative to stargazer)
   - tufterhandout:  output formats for Tufte-style handouts in pdf and html for Rmarkdown
-  - revealjs:  RMarkdown custom format for reveal.js HTML presentations
-  - bookdown:  package and set of conventions for making books with Rmarkdown and RStudio
+  - revealjs:  RMarkdown custom format for reveal.js HTML presentations (G)
+  - bookdown:  package and set of conventions for making books with Rmarkdown and RStudio (G)
 
 ### Programming
   - devtools:  tools to make an R developer's life easier (H)
   - magrittr:  R package to bring forward-piping features ala F#’s |> operator.
   - testthat:  an R package to make testing fun (H)
-  - rex:  friendly regular expressions for R
+  - rex:  friendly regular expressions for R (G)
   - htmlwidgets:  HTML Widgets for R, easily creating R bindings to JavaScript libraries
   - assertthat:  user-friendly assertions for R (H)
   - lazyeval:  a strategy for doing non-standard evaluation (NSE) in R (H)
-  - lineprof:  visualise line profiling results in R (H)
+  - profvis:  visualise line profiling results in R (H)
   - lintr:  static code analyis (i.e., `lint`) for R
   - foreach:  looping construct (i.e., `for` loop) that support parallel execution
   - doParallel:  `foreach` parallel adaptor for the 'parallel' package
@@ -102,6 +104,7 @@ That said, here is the complete list of packages in the `industryvault-packages`
   - decide on implementing this package using drat, packrat, or some other method. (Not checkpoint due to GitHub repos)
   - add vignette for use of three most important packages `dplyr`, `ggplot2`, and `rmarkdown`
   - add vignette for examples of all packages
+  - best practices ?
   - consider adding separate packages for datasets; see, for example:
     - noncensus:  self-contained U.S. Census Region and Demographic Data
     - rUnemploymentData:  data and functions for dealing with US Unemployment Data in R
@@ -111,7 +114,6 @@ That said, here is the complete list of packages in the `industryvault-packages`
     - should we allow user-installed packages on AWS?
     - can we prevent data export on AWS from R and RStudio?
   - GitHub repo installation code is below:
-
-
+        
     install_github( c("arilamstein/choroplethrZip", "dgrtwo/snippr", "eddelbuettel/rpushbullet", "edwindj/chunked", "hadley/bigvis", "hadley/svglite", "haozhu233/ezsummary", "hrbrmstr/ggcounty", "jjallaire/revealjs", "karthik/rdrop2", "kevinushey/rex", "nutterb/pixiedust", "ramnathv/slidify", "ramnathv/slidifyLibraries", "ropensci/testdat", "rstudio/bookdown", "trinker/wakefield", "walkerke/tigris") )
 
