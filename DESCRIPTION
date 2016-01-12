@@ -1,4 +1,4 @@
-Package: industryvault-packages
+Package: Rpackages
 Type: Package
 Title: Attaches the standard CRAN packages for the IndustryVault platform
 Version: 0.1
