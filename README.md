@@ -1,4 +1,4 @@
-# IndustryVault's Recommended Packages
+# IndustryVault's Recommended R Packages
 
 This is an R package that just attaches the IndustryVault-recommended packages (`industryvault-packages`) for use on our platform.  It includes most of Hadley Wickham's packages (colloquially known as the "Hadleyverse").  It's based on a similar package by Tony Boyles.
 
@@ -7,13 +7,13 @@ This is an R package that just attaches the IndustryVault-recommended packages (
 
     install.packages("devtools")
     library("devtools")
-    install_github("IndustryVault/industryvault-packages")
+    install_github("IndustryVault/Rpackages")
 
 
 ## Use
 
-    library("industryvault-packages") 
-    # All of the IndustryVault-recommended packages are now available in your environment.
+    library("Rpackages") 
+    # All of the IndustryVault-recommended R packages are now available in your environment.
     # There's no need to call library("dplyr"), etc.
 
 
@@ -26,7 +26,7 @@ When you install an R Package, R checks the DESCRIPTION file for dependencies. I
 
 The three most important R packages used on the IndustryVault platform are `dplyr`, `ggplot2`, and `rmarkdown`.  For R users new to our platform, these are the first packages with which you should become familiar.
 
-That said, here is the complete list of packages in the `industryvault-packages` package installs and loads.  Note that packages associated with the "Hadleyverse" are denoted with (H), and packages hosted on GitHub.com (not CRAN) are denoted with (G).  The packages installed include:
+That said, here is the complete list of packages in the `Rpackages` package installs and loads.  Note that packages associated with the "Hadleyverse" are denoted with (H), and packages hosted on GitHub.com (not CRAN) are denoted with (G).  The packages installed include:
 
 ### Ingest
   - readr:  read flat files (csv, tsv, fwf) into R (H)
