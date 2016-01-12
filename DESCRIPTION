@@ -48,7 +48,7 @@ Depends:
     rmarkdown,
     rms,
     RPostgreSQL,
-    rpushbullet,
+    RPushbullet,
     rUnemploymentData,
     rvest,
     scales,
