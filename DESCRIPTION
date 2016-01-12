@@ -10,6 +10,7 @@ Depends:
     assertr,
     beepr,
     broom,
+    Cairo,
     captioner,
     choroplethr,
     chunked,
